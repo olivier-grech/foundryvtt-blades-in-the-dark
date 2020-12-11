@@ -1,3 +1,8 @@
+.foundry-hover:hover {
+  cursor: pointer;
+  text-shadow: 0 0 8px red;
+}
+
 .character-top-grid {
   display: grid;
   grid-template-columns: 135px auto auto;
@@ -10,10 +15,54 @@
   grid-row-end: 4;
 }
 
-.underlined-input {
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-radius: 0px !important;
-  background: none !important;
+/* Coins */
+
+.coins {
+  cursor: pointer;
+}
+
+.coins label {
+  background-color: #FFDC00;
+  border: 1px solid #111111;
+  cursor: pointer;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.coins input {
+  display: none;
+}
+
+.coins input:checked ~ label {
+  background-color: #FFFFFF;
+}
+
+.coins input:checked + label {
+  background-color: #FFDC00;
+}
+
+.coins input ~ label[for$="0"] {
+  border-width: 2px;
+}
+
+.coins input ~ label:hover {
+  background-color: #DDDDDD;
+
+}
+
+.coins-hand {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(4, 15px [col-start]);
+  grid-template-rows: repeat(1, 15px [row-start]);
+  row-gap: 3px;
+}
+
+.coins-stashed {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(10, 15px [col-start]);
+  grid-template-rows: repeat(4, 15px [row-start]);
+  row-gap: 3px;
 }
