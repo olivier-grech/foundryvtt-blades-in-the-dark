@@ -1,3 +1,22 @@
+
+/* Utilities */
+
+.horizontal-separator {
+  max-width: 10px;
+  min-width: 10px;
+  width: 10px;
+}
+
+.small-vertical-separator {
+  max-height: 3px;
+  min-height: 3px;
+  height: 3px;
+}
+
+.flex-row {
+  display: flex;
+}
+
 .foundry-hover:hover {
   cursor: pointer;
   text-shadow: 0 0 8px red;
@@ -15,11 +34,9 @@
   grid-row-end: 4;
 }
 
-/* Coins */
 
-.coins {
-  cursor: pointer;
-}
+
+/* Coins */
 
 .coins label {
   background-color: #FFDC00;
@@ -48,7 +65,6 @@
 
 .coins input ~ label:hover {
   background-color: #DDDDDD;
-
 }
 
 .coins-hand {
@@ -65,4 +81,43 @@
   grid-template-columns: repeat(10, 15px [col-start]);
   grid-template-rows: repeat(4, 15px [row-start]);
   row-gap: 3px;
+}
+
+/* Stress */
+
+.stress {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(9, 15px [col-start]);
+  grid-template-rows: repeat(1, 15px [row-start]);
+  row-gap: 3px;
+}
+
+.stress label {
+  background-color: #FF4136;
+  border: 1px solid #111111;
+  cursor: pointer;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.stress input {
+  display: none;
+}
+
+.stress input:checked ~ label {
+  background-color: #FFFFFF;
+}
+
+.stress input:checked + label {
+  background-color: #FF4136;
+}
+
+.stress input ~ label[for$="0"] {
+  border-width: 2px;
+}
+
+.stress input ~ label:hover {
+  background-color: #DDDDDD;
 }

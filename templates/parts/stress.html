@@ -1,0 +1,43 @@
+<div>
+    <div>
+        <span>{{localize "BITD.Stress"}}</span>
+        <label for="stress-{{actor._id}}-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
+    </div>
+    <div class="stress">
+        {{#multiboxes data.stress}}
+        <input type="radio" id="stress-{{actor._id}}-0" name="data.stress" value="0" checked="checked">
+        <!-- Row of stress -->
+        <input type="radio" id="stress-{{actor._id}}-1" name="data.stress" value="1">
+        <label for="stress-{{actor._id}}-1"></label>
+        <input type="radio" id="stress-{{actor._id}}-2" name="data.stress" value="2">
+        <label for="stress-{{actor._id}}-2"></label>
+        <input type="radio" id="stress-{{actor._id}}-3" name="data.stress" value="3">
+        <label for="stress-{{actor._id}}-3"></label>
+        <input type="radio" id="stress-{{actor._id}}-4" name="data.stress" value="4">
+        <label for="stress-{{actor._id}}-4"></label>
+        <input type="radio" id="stress-{{actor._id}}-5" name="data.stress" value="5">
+        <label for="stress-{{actor._id}}-5"></label>
+        <input type="radio" id="stress-{{actor._id}}-6" name="data.stress" value="6">
+        <label for="stress-{{actor._id}}-6"></label>
+        <input type="radio" id="stress-{{actor._id}}-7" name="data.stress" value="7">
+        <label for="stress-{{actor._id}}-7"></label>
+        <input type="radio" id="stress-{{actor._id}}-8" name="data.stress" value="8">
+        <label for="stress-{{actor._id}}-8"></label>
+        <input type="radio" id="stress-{{actor._id}}-9" name="data.stress" value="9">
+        <label for="stress-{{actor._id}}-9"></label>
+        {{/multiboxes}}
+    </div>
+
+    <br>
+
+    <div>
+        <label>{{localize "BITD.Trauma"}}</label>
+        <div>
+            <input type="text" id="character-{{actor._id}}-trauma-1" name="trauma-1" value="{{actor.trauma-1}}">
+            <div class="small-vertical-separator"></div>
+            <input type="text" id="character-{{actor._id}}-trauma-2" name="trauma-2" value="{{actor.trauma-2}}">
+            <div class="small-vertical-separator"></div>
+            <input type="text" id="character-{{actor._id}}-trauma-3" name="trauma-3" value="{{actor.trauma-3}}">
+        </div>
+    </div>
+</div>

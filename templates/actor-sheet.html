@@ -8,33 +8,38 @@
     </div>
 
     <div id="alias">
-      <label class="underlined-input" for="character-{{actor._id}}-alias">{{localize "BITD.Alias"}}</label>
+      <label for="character-{{actor._id}}-alias">{{localize "BITD.Alias"}}</label>
       <input type="text" id="character-{{actor._id}}-alias" name="alias" value="{{actor.alias}}">
     </div>
 
     <div id="playbook">
-      <label class="underlined-input" for="character-{{actor._id}}-playbook">{{localize "BITD.Playbook"}}</label>
+      <label for="character-{{actor._id}}-playbook">{{localize "BITD.Playbook"}}</label>
       <input type="text" id="character-{{actor._id}}-playbook" name="playbook" value="{{actor.class}}">
     </div>
 
     <div id="vice">
-      <label class="underlined-input" for="character-{{actor._id}}-vice">{{localize "BITD.Vice"}}</label>
+      <label for="character-{{actor._id}}-vice">{{localize "BITD.Vice"}}</label>
       <input type="text" id="character-{{actor._id}}-vice" name="vice" value="{{actor.vice}}">
     </div>
     <div id="heritage">
-      <label class="underlined-input" for="character-{{actor._id}}-heritage">{{localize "BITD.Heritage"}}</label>
+      <label for="character-{{actor._id}}-heritage">{{localize "BITD.Heritage"}}</label>
       <input type="text" id="character-{{actor._id}}-heritage" name="heritage" value="{{actor.heritage}}">
     </div>
 
     <div id="background">
-      <label class="underlined-input" for="character-{{actor._id}}-background">{{localize "BITD.Background"}}</label>
+      <label for="character-{{actor._id}}-background">{{localize "BITD.Background"}}</label>
       <input type="text" id="character-{{actor._id}}-background" name="background" value="{{actor.background}}">
     </div>
   </div>
 
   <hr>
 
-  {{> "systems/blades-in-the-dark/templates/parts/coins.html" actor=actor}}
+  <div class="flex-row">
 
+    {{> "systems/blades-in-the-dark/templates/parts/coins.html" actor=actor}}
+    <div class="horizontal-separator"></div>
+
+    {{> "systems/blades-in-the-dark/templates/parts/stress.html" actor=actor}}
+  </div>
 
 </form>
