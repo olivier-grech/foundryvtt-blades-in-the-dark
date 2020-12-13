@@ -52,7 +52,7 @@
 }
 
 .coins input:checked ~ label {
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .coins input:checked + label {
@@ -64,7 +64,7 @@
 }
 
 .coins input ~ label:hover {
-  background-color: #DDDDDD;
+  background-color: #FFDC00;
 }
 
 .coins-hand {
@@ -107,7 +107,7 @@
 }
 
 .stress input:checked ~ label {
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .stress input:checked + label {
@@ -119,5 +119,5 @@
 }
 
 .stress input ~ label:hover {
-  background-color: #DDDDDD;
+  background-color: #FF4136;
 }
