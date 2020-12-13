@@ -1,45 +1,121 @@
 <form autocomplete="off">
-  <div class="character-top-grid">
-    <img class="character-top-grid-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="character-top-grid">
+        <img class="character-top-grid-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
 
-    <div id="name">
-      <label for="character-{{actor._id}}-name">{{localize "BITD.Name"}}</label>
-      <input type="text" id="character-{{actor._id}}-name" name="name" value="{{actor.name}}">
+        <div id="name">
+            <label for="character-{{actor._id}}-name"><b>{{localize "BITD.Name"}}</b></label>
+            <input type="text" id="character-{{actor._id}}-name" name="name" value="{{actor.name}}">
+        </div>
+
+        <div id="alias">
+            <label for="character-{{actor._id}}-alias"><b>{{localize "BITD.Alias"}}</b></label>
+            <input type="text" id="character-{{actor._id}}-alias" name="alias" value="{{actor.alias}}">
+        </div>
+
+        <div id="playbook">
+            <label for="character-{{actor._id}}-playbook"><b>{{localize "BITD.Playbook"}}</b></label>
+            <input type="text" id="character-{{actor._id}}-playbook" name="playbook" value="{{actor.class}}">
+        </div>
+
+        <div id="vice">
+            <label for="character-{{actor._id}}-vice"><b>{{localize "BITD.Vice"}}</b></label>
+            <input type="text" id="character-{{actor._id}}-vice" name="vice" value="{{actor.vice}}">
+        </div>
+        <div id="heritage">
+            <label for="character-{{actor._id}}-heritage"><b>{{localize "BITD.Heritage"}}</b></label>
+            <input type="text" id="character-{{actor._id}}-heritage" name="heritage" value="{{actor.heritage}}">
+        </div>
+
+        <div id="background">
+            <label for="character-{{actor._id}}-background"><b>{{localize "BITD.Background"}}</b></label>
+            <input type="text" id="character-{{actor._id}}-background" name="background" value="{{actor.background}}">
+        </div>
     </div>
 
-    <div id="alias">
-      <label for="character-{{actor._id}}-alias">{{localize "BITD.Alias"}}</label>
-      <input type="text" id="character-{{actor._id}}-alias" name="alias" value="{{actor.alias}}">
+    <hr>
+
+    <div class="flex-row">
+
+        {{> "systems/blades-in-the-dark/templates/parts/coins.html" actor=actor}}
+        <div class="horizontal-separator"></div>
+
+        {{> "systems/blades-in-the-dark/templates/parts/stress.html" actor=actor}}
+        <div class="horizontal-separator"></div>
+
+        <!-- Healing clock and armor -->
+        <div>
+            <div id="character-health-clock">
+                {{{blades-clock "data.healing-clock" 4 data.healing-clock actor._id}}}
+            </div>
+
+            <br>
+
+            <b>Armor Uses</b>
+
+            <div class="armor flex-row">
+                <span>{{localize "BITD.Armor"}}</span>
+                <input id="armor-uses-armor" type="checkbox" name="data.armor-uses.armor" {{checked
+                    data.armor-uses.armor}}>
+                <label for="armor-uses-armor"></label>
+            </div>
+            <div class="armor flex-row">
+                <span>{{localize "BITD.Heavy"}}</span>
+                <input id="armor-uses-heavy" type="checkbox" name="data.armor-uses.heavy" {{checked
+                    data.armor-uses.heavy}}>
+                <label for="armor-uses-heavy"></label>
+            </div>
+            <div class="armor flex-row">
+                <span>{{localize "BITD.Special"}}</span>
+                <input id="armor-uses-special" type="checkbox" name="data.armor-uses.special" {{checked
+                    data.armor-uses.special}}>
+                <label for="armor-uses-special"></label>
+            </div>
+        </div>
+        <div class="horizontal-separator"></div>
+
+        <div>
+            <b>Harm</b>
+            <div class="harm flex-row">
+                <span>3</span>
+                <div class="small-horizontal-separator"></div>
+
+                <input class="harm-big" type="text" id="character-{{actor._id}}-harm-3-1" name="data.harm.heavy.one"
+                    value="{{data.harm.heavy.one}}">
+                <div class="small-horizontal-separator"></div>
+                <span>Need Help</span>
+            </div>
+            <div class="small-vertical-separator"></div>
+            <div class="harm flex-row">
+                <span>2</span>
+                <div class="small-horizontal-separator"></div>
+
+                <input class="harm-small" type="text" id="character-{{actor._id}}-harm-2-1" name="data.harm.medium.one"
+                    value="{{data.harm.medium.one}}">
+                <div class="very-small-horizontal-separator"></div>
+
+                <input class="harm-small" type="text" id="character-{{actor._id}}-harm-2-2" name="data.harm.medium.two"
+                    value="{{data.harm.medium.two}}">
+                <div class="small-horizontal-separator"></div>
+                <span>-1d</span>
+            </div>
+            <div class="small-vertical-separator"></div>
+            <div class="harm flex-row">
+                <span>1</span>
+                <div class="small-horizontal-separator"></div>
+                <input class="harm-small" type="text" id="character-{{actor._id}}-harm-1-1" name="data.harm.light.one"
+                    value="{{data.harm.light.one}}">
+                <div class="very-small-horizontal-separator"></div>
+
+                <input class="harm-small" type="text" id="character-{{actor._id}}-harm-1-2" name="data.harm.light.two"
+                    value="{{data.harm.light.two}}">
+                <div class="small-horizontal-separator"></div>
+                <span>Less Effect</span>
+            </div>
+        </div>
     </div>
 
-    <div id="playbook">
-      <label for="character-{{actor._id}}-playbook">{{localize "BITD.Playbook"}}</label>
-      <input type="text" id="character-{{actor._id}}-playbook" name="playbook" value="{{actor.class}}">
-    </div>
 
-    <div id="vice">
-      <label for="character-{{actor._id}}-vice">{{localize "BITD.Vice"}}</label>
-      <input type="text" id="character-{{actor._id}}-vice" name="vice" value="{{actor.vice}}">
-    </div>
-    <div id="heritage">
-      <label for="character-{{actor._id}}-heritage">{{localize "BITD.Heritage"}}</label>
-      <input type="text" id="character-{{actor._id}}-heritage" name="heritage" value="{{actor.heritage}}">
-    </div>
+    <hr>
 
-    <div id="background">
-      <label for="character-{{actor._id}}-background">{{localize "BITD.Background"}}</label>
-      <input type="text" id="character-{{actor._id}}-background" name="background" value="{{actor.background}}">
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="flex-row">
-
-    {{> "systems/blades-in-the-dark/templates/parts/coins.html" actor=actor}}
-    <div class="horizontal-separator"></div>
-
-    {{> "systems/blades-in-the-dark/templates/parts/stress.html" actor=actor}}
-  </div>
 
 </form>
