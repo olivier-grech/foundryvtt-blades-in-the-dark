@@ -34,7 +34,7 @@
 
     <hr>
 
-    <div class="flex-row">
+    <div class="flex">
 
         {{> "systems/blades-in-the-dark/templates/parts/coins.html" actor=actor}}
         <div class="horizontal-separator"></div>
@@ -52,19 +52,19 @@
 
             <b>Armor Uses</b>
 
-            <div class="armor flex-row">
+            <div class="armor flex">
                 <span>{{localize "BITD.Armor"}}</span>
                 <input id="armor-uses-armor" type="checkbox" name="data.armor-uses.armor" {{checked
                     data.armor-uses.armor}}>
                 <label for="armor-uses-armor"></label>
             </div>
-            <div class="armor flex-row">
+            <div class="armor flex">
                 <span>{{localize "BITD.Heavy"}}</span>
                 <input id="armor-uses-heavy" type="checkbox" name="data.armor-uses.heavy" {{checked
                     data.armor-uses.heavy}}>
                 <label for="armor-uses-heavy"></label>
             </div>
-            <div class="armor flex-row">
+            <div class="armor flex">
                 <span>{{localize "BITD.Special"}}</span>
                 <input id="armor-uses-special" type="checkbox" name="data.armor-uses.special" {{checked
                     data.armor-uses.special}}>
@@ -75,7 +75,7 @@
 
         <div>
             <b>Harm</b>
-            <div class="harm flex-row">
+            <div class="harm flex">
                 <span>3</span>
                 <div class="small-horizontal-separator"></div>
 
@@ -85,7 +85,7 @@
                 <span>Need Help</span>
             </div>
             <div class="small-vertical-separator"></div>
-            <div class="harm flex-row">
+            <div class="harm flex">
                 <span>2</span>
                 <div class="small-horizontal-separator"></div>
 
@@ -99,7 +99,7 @@
                 <span>-1d</span>
             </div>
             <div class="small-vertical-separator"></div>
-            <div class="harm flex-row">
+            <div class="harm flex">
                 <span>1</span>
                 <div class="small-horizontal-separator"></div>
                 <input class="harm-small" type="text" id="character-{{actor._id}}-harm-1-1" name="data.harm.light.one"

@@ -1,5 +1,9 @@
 
-/* Generic tilities */
+/* Generic utilities */
+
+.flex {
+  display: flex;
+}
 
 .horizontal-separator {
   max-width: 10px;
@@ -19,15 +23,10 @@
   width: 2px;
 }
 
-
 .small-vertical-separator {
   max-height: 3px;
   min-height: 3px;
   height: 3px;
-}
-
-.flex-row {
-  display: flex;
 }
 
 .foundry-hover:hover {
