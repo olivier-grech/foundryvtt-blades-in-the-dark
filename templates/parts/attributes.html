@@ -1,116 +1,43 @@
 <div>
-    <!-- Insight -->
+
+    <!-- Loop on each attribute -->
+    {{#each data.attributes as |attribute attribute_name|}}
+
     <div class="flex attribute-name">
-        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="insight"></span>
+        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="{{attribute_name}}"></span>
         <div class="small-horizontal-separator"></div>
-        <span>INSIGHT</span>
+        <span>{{attribute_name}}</span>
     </div>
+
+    <!-- Loop on each skill -->
+    {{#each attribute.skills as |skill skill_name|}}
+
     <div class="small-vertical-separator"></div>
     <div class="flex">
-        <label for="attributes-{{actor._id}}-hunt-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
+        <label for="attributes-{{actor._id}}-{{skill_name}}-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
         <div class="small-horizontal-separator"></div>
         <div class="skill">
-            {{#multiboxes data.attributes.insight.skills.hunt.value}}
-            <input type="radio" id="attributes-{{actor._id}}-hunt-0" name="data.attributes.insight.skills.hunt.value"
-                value="0" checked="checked">
-            <input type="radio" id="attributes-{{actor._id}}-hunt-1" name="data.attributes.insight.skills.hunt.value"
-                value="1">
-            <label for="attributes-{{actor._id}}-hunt-1"></label>
-            <input type="radio" id="attributes-{{actor._id}}-hunt-2" name="data.attributes.insight.skills.hunt.value"
-                value="2">
-            <label for="attributes-{{actor._id}}-hunt-2"></label>
-            <input type="radio" id="attributes-{{actor._id}}-hunt-3" name="data.attributes.insight.skills.hunt.value"
-                value="3">
-            <label for="attributes-{{actor._id}}-hunt-3"></label>
-            <input type="radio" id="attributes-{{actor._id}}-hunt-4" name="data.attributes.insight.skills.hunt.value"
-                value="4">
-            <label for="attributes-{{actor._id}}-hunt-4"></label>
+            {{#multiboxes skill.value}}
+            <input type="radio" id="attributes-{{actor._id}}-{{skill_name}}-0" name="data.attributes.{{attribute_name}}.skills.{{skill_name}}.value" value="0" checked="checked">
+            <input type="radio" id="attributes-{{actor._id}}-{{skill_name}}-1" name="data.attributes.{{attribute_name}}.skills.{{skill_name}}.value" value="1">
+            <label for="attributes-{{actor._id}}-{{skill_name}}-1"></label>
+            <input type="radio" id="attributes-{{actor._id}}-{{skill_name}}-2" name="data.attributes.{{attribute_name}}.skills.{{skill_name}}.value" value="2">
+            <label for="attributes-{{actor._id}}-{{skill_name}}-2"></label>
+            <input type="radio" id="attributes-{{actor._id}}-{{skill_name}}-3" name="data.attributes.{{attribute_name}}.skills.{{skill_name}}.value" value="3">
+            <label for="attributes-{{actor._id}}-{{skill_name}}-3"></label>
+            <input type="radio" id="attributes-{{actor._id}}-{{skill_name}}-4" name="data.attributes.{{attribute_name}}.skills.{{skill_name}}.value" value="4">
+            <label for="attributes-{{actor._id}}-{{skill_name}}-4"></label>
             {{/multiboxes}}
         </div>
         <div class="small-horizontal-separator"></div>
-        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="hunt"></span>
+        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="{{skill_name}}"></span>
         <div class="small-horizontal-separator"></div>
-        <span>Hunt</span>
+        <span>{{skill_name}}</span>
     </div>
-    <div class="small-vertical-separator"></div>
-    <div class="flex">
-        <label for="attributes-{{actor._id}}-study-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
-        <div class="small-horizontal-separator"></div>
-        <div class="skill">
-            {{#multiboxes data.attributes.insight.skills.study.value}}
-            <input type="radio" id="attributes-{{actor._id}}-study-0" name="data.attributes.insight.skills.study.value"
-                value="0" checked="checked">
-            <input type="radio" id="attributes-{{actor._id}}-study-1" name="data.attributes.insight.skills.study.value"
-                value="1">
-            <label for="attributes-{{actor._id}}-study-1"></label>
-            <input type="radio" id="attributes-{{actor._id}}-study-2" name="data.attributes.insight.skills.study.value"
-                value="2">
-            <label for="attributes-{{actor._id}}-study-2"></label>
-            <input type="radio" id="attributes-{{actor._id}}-study-3" name="data.attributes.insight.skills.study.value"
-                value="3">
-            <label for="attributes-{{actor._id}}-study-3"></label>
-            <input type="radio" id="attributes-{{actor._id}}-study-4" name="data.attributes.insight.skills.study.value"
-                value="4">
-            <label for="attributes-{{actor._id}}-study-4"></label>
-            {{/multiboxes}}
-        </div>
-        <div class="small-horizontal-separator"></div>
-        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="study"></span>
-        <div class="small-horizontal-separator"></div>
-        <span>Study</span>
-    </div>
-    <div class="small-vertical-separator"></div>
-    <div class="flex">
-        <label for="attributes-{{actor._id}}-study-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
-        <div class="small-horizontal-separator"></div>
-        <div class="skill">
-            {{#multiboxes data.attributes.insight.skills.survey.value}}
-            <input type="radio" id="attributes-{{actor._id}}-survey-0"
-                name="data.attributes.insight.skills.survey.value" value="0" checked="checked">
-            <input type="radio" id="attributes-{{actor._id}}-survey-1"
-                name="data.attributes.insight.skills.survey.value" value="1">
-            <label for="attributes-{{actor._id}}-survey-1"></label>
-            <input type="radio" id="attributes-{{actor._id}}-survey-2"
-                name="data.attributes.insight.skills.survey.value" value="2">
-            <label for="attributes-{{actor._id}}-survey-2"></label>
-            <input type="radio" id="attributes-{{actor._id}}-survey-3"
-                name="data.attributes.insight.skills.survey.value" value="3">
-            <label for="attributes-{{actor._id}}-survey-3"></label>
-            <input type="radio" id="attributes-{{actor._id}}-survey-4"
-                name="data.attributes.insight.skills.survey.value" value="4">
-            <label for="attributes-{{actor._id}}-survey-4"></label>
-            {{/multiboxes}}
-        </div>
-        <div class="small-horizontal-separator"></div>
-        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="survey"></span>
-        <div class="small-horizontal-separator"></div>
-        <span>Survey</span>
-    </div>
-    <div class="small-vertical-separator"></div>
-    <div class="flex">
-        <label for="attributes-{{actor._id}}-study-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
-        <div class="small-horizontal-separator"></div>
-        <div class="skill">
-            {{#multiboxes data.attributes.insight.skills.tinker.value}}
-            <input type="radio" id="attributes-{{actor._id}}-tinker-0"
-                name="data.attributes.insight.skills.tinker.value" value="0" checked="checked">
-            <input type="radio" id="attributes-{{actor._id}}-tinker-1"
-                name="data.attributes.insight.skills.tinker.value" value="1">
-            <label for="attributes-{{actor._id}}-tinker-1"></label>
-            <input type="radio" id="attributes-{{actor._id}}-tinker-2"
-                name="data.attributes.insight.skills.tinker.value" value="2">
-            <label for="attributes-{{actor._id}}-tinker-2"></label>
-            <input type="radio" id="attributes-{{actor._id}}-tinker-3"
-                name="data.attributes.insight.skills.tinker.value" value="3">
-            <label for="attributes-{{actor._id}}-tinker-3"></label>
-            <input type="radio" id="attributes-{{actor._id}}-tinker-4"
-                name="data.attributes.insight.skills.tinker.value" value="4">
-            <label for="attributes-{{actor._id}}-tinker-4"></label>
-            {{/multiboxes}}
-        </div>
-        <div class="small-horizontal-separator"></div>
-        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="tinker"></span>
-        <div class="small-horizontal-separator"></div>
-        <span>Tinker</span>
-    </div>
+
+    {{/each}}
+
+    <br>
+
+    {{/each}}
 </div>
