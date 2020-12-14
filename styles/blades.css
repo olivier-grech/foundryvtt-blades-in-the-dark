@@ -17,12 +17,6 @@
   width: 3px;
 }
 
-.very-small-horizontal-separator {
-  max-width: 2px;
-  min-width: 2px;
-  width: 2px;
-}
-
 .small-vertical-separator {
   max-height: 3px;
   min-height: 3px;
@@ -52,7 +46,7 @@
   background-color: black;
   color: white;
   padding: 0.5em;
-  width: 10em;
+  width: 12em;
 }
 
 .skill {
