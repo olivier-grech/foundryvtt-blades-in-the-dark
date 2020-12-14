@@ -1,9 +1,5 @@
 
-/* Generic utilities */
-
-.flex {
-  display: flex;
-}
+/* Spacing */
 
 .horizontal-separator {
   max-width: 10px;
@@ -23,10 +19,41 @@
   height: 3px;
 }
 
+/* Generic utilities */
+
+.white-on-black {
+  background-color: black;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
 .foundry-hover:hover {
   cursor: pointer;
   text-shadow: 0 0 8px red;
 }
+
+.padding {
+  padding: 0.5em;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Attributes column */
+
+.attributes-column {
+  width: 13em;
+}
+
+/* Top part */
 
 .character-top-grid {
   display: grid;
@@ -43,8 +70,7 @@
 /* Attributes and Skills */
 
 .attribute-name {
-  background-color: black;
-  color: white;
+
   padding: 0.5em;
   width: 12em;
 }

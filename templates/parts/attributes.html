@@ -1,17 +1,13 @@
-<div>
-
+<div class="attributes-column">
     <!-- Loop on each attribute -->
     {{#each data.attributes as |attribute attribute_name|}}
-
-    <div class="flex attribute-name">
-        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="{{attribute_name}}"></span>
+    <div class="flex padding white-on-black">
+        <span class="fas fa-dice foundry-hover roll-die-attribute" data-roll-attribute="{{attribute_name}}"></span>
         <div class="small-horizontal-separator"></div>
-        <span>{{attribute_name}}</span>
+        <span class="uppercase">{{attribute_name}}</span>
     </div>
-
     <!-- Loop on each skill -->
     {{#each attribute.skills as |skill skill_name|}}
-
     <div class="small-vertical-separator"></div>
     <div class="flex">
         <label for="attributes-{{actor._id}}-{{skill_name}}-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
@@ -30,14 +26,11 @@
             {{/multiboxes}}
         </div>
         <div class="small-horizontal-separator"></div>
-        <span class="fas fa-dice foundry-hover roll-die-attribute rollable-text" data-roll-attribute="{{skill_name}}"></span>
+        <span class="fas fa-dice foundry-hover roll-die-attribute" data-roll-attribute="{{skill_name}}"></span>
         <div class="small-horizontal-separator"></div>
-        <span>{{skill_name}}</span>
+        <span class="capitalize">{{skill_name}}</span>
     </div>
-
     {{/each}}
-
     <br>
-
     {{/each}}
 </div>
