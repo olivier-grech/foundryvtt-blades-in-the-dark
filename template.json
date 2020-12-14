@@ -46,6 +46,24 @@
       "heavy": 0,
       "special": 0
     },
+    "carried-items": {
+      "a-blade-or-two": 0,
+      "throwing-knives": 0,
+      "a-pistol": 0,
+      "a-second-pistol": 0,
+      "a-large-weapon": 0,
+      "an-unusual-weapon": 0,
+      "armor": 0,
+      "heavy": 0,
+      "burglary-gear": 0,
+      "climbing-gear": 0,
+      "arcane-implements": 0,
+      "documents": 0,
+      "subterfuge-suplies": 0,
+      "demolition-tools": 0,
+      "tinkering-tools": 0,
+      "lantern": 0
+    },
     "attributes": {
         "insight": {
           "exp": [0],
