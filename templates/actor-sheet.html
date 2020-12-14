@@ -91,7 +91,7 @@
 
                 <input class="harm-small" type="text" id="character-{{actor._id}}-harm-2-1" name="data.harm.medium.one"
                     value="{{data.harm.medium.one}}">
-                <div class="very-small-horizontal-separator"></div>
+                <div class="small-horizontal-separator"></div>
 
                 <input class="harm-small" type="text" id="character-{{actor._id}}-harm-2-2" name="data.harm.medium.two"
                     value="{{data.harm.medium.two}}">
@@ -114,8 +114,10 @@
         </div>
     </div>
 
-
     <hr>
+
+    {{> "systems/blades-in-the-dark/templates/parts/attributes.html" actor=actor}}
+
 
 
 </form>

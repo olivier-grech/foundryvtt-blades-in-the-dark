@@ -47,6 +47,49 @@
   grid-row-end: 4;
 }
 
+/* Attributes and Skills */
+
+.attribute-name {
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+  width: 10em;
+}
+
+.skill {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(4, 15px [col-start]);
+  grid-template-rows: repeat(1, 15px [row-start]);
+  row-gap: 3px;
+}
+
+.skill label {
+  background-color: #111111;
+  border: 1px solid #111111;
+  cursor: pointer;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.skill input {
+  display: none;
+}
+
+.skill input:checked ~ label {
+  background-color: transparent;
+}
+
+.skill input:checked + label {
+  background-color: #111111;
+}
+
+.skill input ~ label:hover {
+  background-color: #111111;
+}
+
 /* Harm */
 
 .harm {
@@ -54,8 +97,8 @@
 }
 
 .harm-big {
-  min-width: 150px !important;
-  width: 150px !important;
+  min-width: 151px !important;
+  width: 151px !important;
 }
 
 .harm-small {
