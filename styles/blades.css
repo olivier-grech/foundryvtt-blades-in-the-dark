@@ -35,6 +35,10 @@
   text-shadow: 0 0 8px red;
 }
 
+.cursor-help {
+  cursor: help;
+}
+
 .padding {
   padding: 0.5em;
 }
