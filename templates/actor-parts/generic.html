@@ -1,0 +1,22 @@
+<div class="character-top-grid">
+    <img class="character-top-grid-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+
+    <div id="name">
+        <label for="character-{{actor._id}}-name"><b>{{localize "BITD.Name"}}</b></label>
+        <input type="text" id="character-{{actor._id}}-name" name="name" value="{{actor.name}}">
+    </div>
+
+    <div id="vice">
+        <label for="character-{{actor._id}}-vice"><b>{{localize "BITD.Vice"}}</b></label>
+        <input type="text" id="character-{{actor._id}}-vice" name="vice" value="{{actor.vice}}">
+    </div>
+    <div id="heritage">
+        <label for="character-{{actor._id}}-heritage"><b>{{localize "BITD.Heritage"}}</b></label>
+        <input type="text" id="character-{{actor._id}}-heritage" name="heritage" value="{{actor.heritage}}">
+    </div>
+
+    <div id="background">
+        <label for="character-{{actor._id}}-background"><b>{{localize "BITD.Background"}}</b></label>
+        <input type="text" id="character-{{actor._id}}-background" name="background" value="{{actor.background}}">
+    </div>
+</div>
