@@ -69,14 +69,14 @@
 
 .character-top-grid {
   display: grid;
-  grid-template-columns: 135px auto auto;
-  grid-template-rows: 45px 45px 45px;
-  column-gap: 5px;
+  grid-template-columns: 91px auto auto;
+  grid-template-rows: 43px 43px;
+  gap: 5px;
 }
 
 .character-top-grid-img {
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 3;
 }
 
 /* Attributes and Skills */
