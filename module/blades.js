@@ -15,6 +15,7 @@ import { BladesItemSheet } from "./blades-item-sheet.js";
 import { BladesActorSheet } from "./blades-actor-sheet.js";
 import { BladesCrewSheet } from "./blades-crew-sheet.js";
 import { BladesClockSheet } from "./blades-clock-sheet.js";
+import { PlaybookSheetWhisper } from "./playbook-sheet-whisper.js"
 import * as migrations from "./migration.js";
 
 window.BladesHelpers = BladesHelpers;
@@ -42,6 +43,7 @@ Hooks.once("init", async function() {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("blades", BladesActorSheet, { types: ["character"], makeDefault: true });
+  Actors.registerSheet("blades", PlaybookSheetWhisper, { types: ["whisper"], makeDefault: true });
   Actors.registerSheet("blades", BladesCrewSheet, { types: ["crew"], makeDefault: true });
   Actors.registerSheet("blades", BladesClockSheet, { types: ["\uD83D\uDD5B clock"], makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);

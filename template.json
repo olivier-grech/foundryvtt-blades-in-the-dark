@@ -1,140 +1,152 @@
 {
 "Actor": {
-  "types": ["character", "crew", "\uD83D\uDD5B clock"],
-  "character": {
-    "alias": "",
-    "stress": {
-      "value": [0],
-      "max": 9,
-      "max_default": 9,
-      "name_default": "BITD.Stress",
-      "name": "BITD.Stress"
-    },
-    "trauma": {
-      "max": 4,
-      "max_default": 4,
-      "value": [0],
-      "name": "BITD.Trauma",
-      "name_default": "BITD.Trauma",
-      "list": [0]
-    },
-    "healing-clock": [0],
-    "experience": [0],
-    "coins": [0],
-    "coins_stashed": [0],
-    "special_abilities": [],
-    "loadout": 0,
-    "load_level": "",
-    "harm": {
-        "light": {
-          "one": "",
-          "two": ""
-        },
-        "medium": {
-          "one": "",
-          "two": ""
-        },
-        "heavy": {
-          "one": ""
-        },
-        "deadly": {
-          "one": ""
-        }
-    },
-    "armor-uses": {
-      "armor": 0,
-      "heavy": 0,
-      "special": 0
-    },
-    "carried-items": {
-      "a-blade-or-two": 0,
-      "throwing-knives": 0,
-      "a-pistol": 0,
-      "a-second-pistol": 0,
-      "a-large-weapon": 0,
-      "an-unusual-weapon": 0,
-      "armor": 0,
-      "heavy": 0,
-      "burglary-gear": 0,
-      "climbing-gear": 0,
-      "arcane-implements": 0,
-      "documents": 0,
-      "subterfuge-suplies": 0,
-      "demolition-tools": 0,
-      "tinkering-tools": 0,
-      "lantern": 0
-    },
-    "abilities": {
-      "compel": 0
-    },
-    "attributes": {
-        "insight": {
-          "exp": [0],
-          "label": "BITD.SkillsInsight",
-          "skills": {
-            "hunt": {
-              "label": "BITD.SkillsHunt",
-              "value": [0]
-            },
-            "study": {
-              "label": "BITD.SkillsStudy",
-              "value": [0]
-            },
-            "survey": {
-              "label": "BITD.SkillsSurvey",
-              "value": [0]
-            },
-            "tinker": {
-              "label": "BITD.SkillsTinker",
-              "value": [0]
+  "types": ["character", "crew", "\uD83D\uDD5B clock", "whisper"],
+  "templates": {
+    "character": {
+      "alias": "",
+      "stress": {
+        "value": [0],
+        "max": 9,
+        "max_default": 9,
+        "name_default": "BITD.Stress",
+        "name": "BITD.Stress"
+      },
+      "trauma": {
+        "max": 4,
+        "max_default": 4,
+        "value": [0],
+        "name": "BITD.Trauma",
+        "name_default": "BITD.Trauma",
+        "list": [0]
+      },
+      "healing-clock": [0],
+      "experience": [0],
+      "coins": [0],
+      "coins_stashed": [0],
+      "special_abilities": [],
+      "loadout": 0,
+      "load_level": "",
+      "harm": {
+          "light": {
+            "one": "",
+            "two": ""
+          },
+          "medium": {
+            "one": "",
+            "two": ""
+          },
+          "heavy": {
+            "one": ""
+          },
+          "deadly": {
+            "one": ""
+          }
+      },
+      "armor-uses": {
+        "armor": 0,
+        "heavy": 0,
+        "special": 0
+      },
+      "carried-items": {
+        "a-blade-or-two": 0,
+        "throwing-knives": 0,
+        "a-pistol": 0,
+        "a-second-pistol": 0,
+        "a-large-weapon": 0,
+        "an-unusual-weapon": 0,
+        "armor": 0,
+        "heavy": 0,
+        "burglary-gear": 0,
+        "climbing-gear": 0,
+        "arcane-implements": 0,
+        "documents": 0,
+        "subterfuge-suplies": 0,
+        "demolition-tools": 0,
+        "tinkering-tools": 0,
+        "lantern": 0
+      },
+      "abilities": {
+        "compel": 0,
+        "ghost-mind": 0,
+        "iron-will": 0,
+        "occultist": 0,
+        "ritual": 0,
+        "strange-methods": 0,
+        "tempest": 0,
+        "warded": 0
+      },
+      "attributes": {
+          "insight": {
+            "exp": [0],
+            "label": "BITD.SkillsInsight",
+            "skills": {
+              "hunt": {
+                "label": "BITD.SkillsHunt",
+                "value": [0]
+              },
+              "study": {
+                "label": "BITD.SkillsStudy",
+                "value": [0]
+              },
+              "survey": {
+                "label": "BITD.SkillsSurvey",
+                "value": [0]
+              },
+              "tinker": {
+                "label": "BITD.SkillsTinker",
+                "value": [0]
+              }
+            }
+          },
+          "prowess": {
+            "exp": [0],
+            "label": "BITD.SkillsProwess",
+            "skills": {
+              "finesse": {
+                "label": "BITD.SkillsFinesse",
+                "value": [0]
+              },
+              "prowl": {
+                "label": "BITD.SkillsProwl",
+                "value": [0]
+              },
+              "skirmish": {
+                "label": "BITD.SkillsSkirmish",
+                "value": [0]
+              },
+              "wreck": {
+                "label": "BITD.SkillsWreck",
+                "value": [0]
+              }
+            }
+          },
+          "resolve": {
+            "exp": [0],
+            "label": "BITD.SkillsResolve",
+            "skills": {
+              "attune": {
+                "label": "BITD.SkillsAttune",
+                "value": [0]
+              },
+              "command": {
+                "label": "BITD.SkillsCommand",
+                "value": [0]
+              },
+              "consort": {
+                "label": "BITD.SkillsConsort",
+                "value": [0]
+              },
+              "sway": {
+                "label": "BITD.SkillsSway",
+                "value": [0]
+              }
             }
           }
-        },
-        "prowess": {
-          "exp": [0],
-          "label": "BITD.SkillsProwess",
-          "skills": {
-            "finesse": {
-              "label": "BITD.SkillsFinesse",
-              "value": [0]
-            },
-            "prowl": {
-              "label": "BITD.SkillsProwl",
-              "value": [0]
-            },
-            "skirmish": {
-              "label": "BITD.SkillsSkirmish",
-              "value": [0]
-            },
-            "wreck": {
-              "label": "BITD.SkillsWreck",
-              "value": [0]
-            }
-          }
-        },
-        "resolve": {
-          "exp": [0],
-          "label": "BITD.SkillsResolve",
-          "skills": {
-            "attune": {
-              "label": "BITD.SkillsAttune",
-              "value": [0]
-            },
-            "command": {
-              "label": "BITD.SkillsCommand",
-              "value": [0]
-            },
-            "consort": {
-              "label": "BITD.SkillsConsort",
-              "value": [0]
-            },
-            "sway": {
-              "label": "BITD.SkillsSway",
-              "value": [0]
-            }
-          }
-        }
+      }
     }
+  },
+  "whisper": {
+    "templates": ["character"]
   },
   "crew": {
     "name": "",
