@@ -140,11 +140,11 @@
 
 /* Armor check */
 
-.armor {
+.generic-item {
   align-items: center;
 }
 
-.armor label {
+.generic-item label {
   background-color: transparent;
   border: 1px solid #111111;
   cursor: pointer;
@@ -153,11 +153,11 @@
   width: 15px;
 }
 
-.armor input {
+.generic-item input {
   display: none;
 }
 
-.armor input:checked ~ label {
+.generic-item input:checked ~ label {
   background-color: #111111;
 }
 
