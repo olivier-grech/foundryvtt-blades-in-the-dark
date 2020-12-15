@@ -50,16 +50,19 @@
 /* Column */
 
 .attributes-column {
-  width: 13em;
+  width: 15em;
 }
 
 .carried-items-column {
-  width: 13em;
+  width: 15em;
+}
+
+.abilities-column {
+  width: 15em;
 }
 
 .armor-column {
   width: 5em;
-
 }
 
 /* Top part */
