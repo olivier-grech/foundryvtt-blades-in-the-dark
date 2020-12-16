@@ -9,7 +9,7 @@ export const preloadHandlebarsTemplates = async function() {
   const templatePaths = [
 
     // Actor Sheet Partials
-    "systems/blades-in-the-dark/templates/actor-parts/abilities-whisper.html",
+    "systems/blades-in-the-dark/templates/actor-parts/playbook-abilities-whisper.html",
     "systems/blades-in-the-dark/templates/actor-parts/attributes.html",
     "systems/blades-in-the-dark/templates/actor-parts/coins.html",
     "systems/blades-in-the-dark/templates/actor-parts/generic.html",
