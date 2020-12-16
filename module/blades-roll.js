@@ -50,7 +50,7 @@ async function showChatRollMessage(r, zeromode, attribute_name = "", position = 
   let speaker = ChatMessage.getSpeaker();
   let isBelow070 = isNewerVersion('0.7.0', game.data.version);
   let rolls = [];
-  let attribute_label = BladesHelpers.getAttributeLabel(attribute_name);
+  let attribute_label = attribute_name;
   
   // Backward Compat for rolls.
   if (isBelow070) {

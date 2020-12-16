@@ -46,7 +46,7 @@ export class BladesActor extends Actor {
   rollAttributePopup(attribute_name) {
 
     // const roll = new Roll("1d20 + @abilities.wis.mod", actor.getRollData());
-    let attribute_label = BladesHelpers.getAttributeLabel(attribute_name);
+    let attribute_label = attribute_name;
 
     new Dialog({
       title: `${game.i18n.localize('BITD.Roll')} ${game.i18n.localize(attribute_label)}`,
