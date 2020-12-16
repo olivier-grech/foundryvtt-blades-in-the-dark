@@ -84,7 +84,13 @@
         {{> "systems/blades-in-the-dark/templates/actor-parts/attributes.html" actor=actor}}
         <div class="horizontal-separator"></div>
 
-        {{> "systems/blades-in-the-dark/templates/actor-parts/items.html" actor=actor}}
+        <div class="carried-items-column">
+            <div class="flex padding white-on-black">
+                <span class="uppercase">ITEMS</span>
+            </div>
+            {{> "systems/blades-in-the-dark/templates/actor-parts/items.html" actor=actor}}
+
+        </div>
         <div class="horizontal-separator"></div>
         {{> "systems/blades-in-the-dark/templates/actor-parts/playbook-abilities-whisper.html" actor=actor}}
 
