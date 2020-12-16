@@ -1,0 +1,111 @@
+<form autocomplete="off">
+    {{> "systems/blades-in-the-dark/templates/actor-parts/generic.html" actor=actor}}
+
+    <hr>
+
+    <div class="flex">
+
+        {{> "systems/blades-in-the-dark/templates/actor-parts/coins.html" actor=actor}}
+        <div class="horizontal-separator"></div>
+
+        {{> "systems/blades-in-the-dark/templates/actor-parts/stress.html" actor=actor}}
+        <div class="horizontal-separator"></div>
+
+        <!-- Healing clock and armor -->
+        <div>
+            <div id="character-health-clock">
+                {{{blades-clock "data.healing-clock" 4 data.healing-clock actor._id}}}
+            </div>
+
+            <br>
+
+            <b>Armor Uses</b>
+
+            <div class="generic-item armor-column flex">
+                <input id="armor-uses-armor" type="checkbox" name="data.armor-uses.armor" {{checked data.armor-uses.armor}}>
+                <label for="armor-uses-armor"></label>
+                <div class="small-horizontal-separator"></div>
+                <span>{{localize "BITD.Armor"}}</span>
+            </div>
+            <div class="generic-item armor-column flex">
+                <input id="armor-uses-heavy" type="checkbox" name="data.armor-uses.heavy" {{checked data.armor-uses.heavy}}>
+                <label for="armor-uses-heavy"></label>
+                <div class="small-horizontal-separator"></div>
+                <span>{{localize "BITD.Heavy"}}</span>
+            </div>
+            <div class="generic-item armor-column flex">
+                <input id="armor-uses-special" type="checkbox" name="data.armor-uses.special" {{checked data.armor-uses.special}}>
+                <label for="armor-uses-special"></label>
+                <div class="small-horizontal-separator"></div>
+                <span>{{localize "BITD.Special"}}</span>
+            </div>
+        </div>
+        <div class="horizontal-separator"></div>
+
+        <div>
+            <b>Harm</b>
+            <div class="harm flex">
+                <span>3</span>
+                <div class="small-horizontal-separator"></div>
+
+                <input class="harm-big" type="text" id="character-{{actor._id}}-harm-3-1" name="data.harm.heavy.one" value="{{data.harm.heavy.one}}">
+                <div class="small-horizontal-separator"></div>
+                <span>Need Help</span>
+            </div>
+            <div class="small-vertical-separator"></div>
+            <div class="harm flex">
+                <span>2</span>
+                <div class="small-horizontal-separator"></div>
+
+                <input class="harm-small" type="text" id="character-{{actor._id}}-harm-2-1" name="data.harm.medium.one" value="{{data.harm.medium.one}}">
+                <div class="small-horizontal-separator"></div>
+
+                <input class="harm-small" type="text" id="character-{{actor._id}}-harm-2-2" name="data.harm.medium.two" value="{{data.harm.medium.two}}">
+                <div class="small-horizontal-separator"></div>
+                <span>-1d</span>
+            </div>
+            <div class="small-vertical-separator"></div>
+            <div class="harm flex">
+                <span>1</span>
+                <div class="small-horizontal-separator"></div>
+                <input class="harm-small" type="text" id="character-{{actor._id}}-harm-1-1" name="data.harm.light.one" value="{{data.harm.light.one}}">
+                <div class="small-horizontal-separator"></div>
+
+                <input class="harm-small" type="text" id="character-{{actor._id}}-harm-1-2" name="data.harm.light.two" value="{{data.harm.light.two}}">
+                <div class="small-horizontal-separator"></div>
+                <span>Less Effect</span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="flex">
+        {{> "systems/blades-in-the-dark/templates/actor-parts/attributes.html" actor=actor}}
+        <div class="horizontal-separator"></div>
+
+        <!-- Items column -->
+        <div class="carried-items-column">
+            <div class="flex padding white-on-black">
+                <span class="uppercase">ITEMS</span>
+            </div>
+            {{> "systems/blades-in-the-dark/templates/actor-parts/items.html" actor=actor}}
+            <br>
+            {{> "systems/blades-in-the-dark/templates/actor-parts/playbook-items-lurk.html" actor=actor}}
+        </div>
+
+        <div class="horizontal-separator"></div>
+
+        <!-- Abilities column -->
+        <div class="abilities-column">
+            <div class="flex padding white-on-black">
+                <span class="uppercase">ABILITIES</span>
+            </div>
+            {{> "systems/blades-in-the-dark/templates/actor-parts/playbook-abilities-lurk.html" actor=actor}}
+        </div>
+    </div>
+    <hr>
+    <b>Notes</b>
+
+    <textarea rows="8" name="data.description">{{{data.description}}}</textarea>
+</form>
