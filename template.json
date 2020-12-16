@@ -7,16 +7,12 @@
       "stress": {
         "value": [0],
         "max": 9,
-        "max_default": 9,
-        "name_default": "BITD.Stress",
-        "name": "BITD.Stress"
+        "max_default": 9
       },
       "trauma": {
         "max": 4,
         "max_default": 4,
         "value": [0],
-        "name": "BITD.Trauma",
-        "name_default": "BITD.Trauma",
         "list": [0]
       },
       "healing-clock": [0],
