@@ -35,7 +35,7 @@
   text-shadow: 0 0 8px red;
 }
 
-.cursor-help {
+.cursor-help:hover {
   cursor: help;
 }
 
