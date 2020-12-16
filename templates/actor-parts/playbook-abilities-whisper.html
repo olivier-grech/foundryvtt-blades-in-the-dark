@@ -1,76 +1,91 @@
-<div class="abilities-column">
-    <div class="flex padding white-on-black">
-        <span class="uppercase">ABILITIES</span>
-    </div>
+<div class="small-vertical-separator"></div>
 
-    <div class="small-vertical-separator"></div>
+<div class="generic-item flex">
+    <i class="fas fa-question-circle cursor-help"
+        title="You can Attune to the ghost field to force a nearby ghost to appear and obey a command you give it. You are not supernaturally terrified by a ghost you summon or compel (though your allies may be)."></i>
+    <div class="small-horizontal-separator"></div>
+    <input id="compel" type="checkbox" name="data.abilities.compel" {{checked data.abilities.compel}}>
+    <label for="compel"></label>
+    <div class="small-horizontal-separator"></div>
+    <span>Compel</span>
+</div>
 
-    <div class="generic-item flex">
-        <i class="fas fa-question-circle cursor-help"
-            title="You can Attune to the ghost field to force a nearby ghost to appear and obey a command you give it. You are not supernaturally terrified by a ghost you summon or compel (though your allies may be)."></i>
-        <div class="small-horizontal-separator"></div>
-        <input id="compel" type="checkbox" name="data.abilities.compel" {{checked data.abilities.compel}}>
-        <label for="compel"></label>
-        <div class="small-horizontal-separator"></div>
-        <span>Compel</span>
-    </div>
-    <div class="generic-item flex cursor-help">
-        <i class="fas fa-question-circle" title="You’re always aware of supernatural entities in your presence. Take +1d when you gather info about the supernatural."></i>
-        <div class="small-horizontal-separator"></div>
-        <input id="ghost-mind" type="checkbox" name="data.abilities.ghost-mind" {{checked data.abilities.ghost-mind}}>
-        <label for="ghost-mind"></label>
-        <div class="small-horizontal-separator"></div>
-        <span>Ghost Mind</span>
-    </div>
-    <div class="generic-item flex cursor-help">
-        <i class="fas fa-question-circle" title="You're immune to the terror that some supernatural entities inflict on sight. Take +1d to resistance rolls with Resolve."></i>
-        <div class="small-horizontal-separator"></div>
-        <input id="iron-will" type="checkbox" name="data.abilities.iron-will" {{checked data.abilities.iron-will}}>
-        <label for="iron-will"></label>
-        <div class="small-horizontal-separator"></div>
-        <span>Iron Will</span>
-    </div>
-    <div class="generic-item flex cursor-help">
-        <i class="fas fa-question-circle"
-            title="You know the secret ways to Consort with ancient powers, forgotten gods or demons. Once you've consorted with one, you get +1d to Command cultists who worship it."></i>
-        <div class="small-horizontal-separator"></div>
-        <input id="occultist" type="checkbox" name="data.abilities.occultist" {{checked data.abilities.occultist}}>
-        <label for="occultist"></label>
-        <div class="small-horizontal-separator"></div>
-        <span>Occultist</span>
-    </div>
-    <div class="generic-item flex cursor-help">
-        <i class="fas fa-question-circle"
-            title="You can Study an occult ritual (or create a new one) to summon a supernatural effect or being. You know the arcane methods to perform ritual sorcery. You begin with one ritual already learned."></i>
-        <div class="small-horizontal-separator"></div>
-        <input id="ritual" type="checkbox" name="data.abilities.ritual" {{checked data.abilities.ritual}}>
-        <label for="ritual"></label>
-        <div class="small-horizontal-separator"></div>
-        <span>Ritual</span>
-    </div>
-    <div class="generic-item flex cursor-help">
-        <i class="fas fa-question-circle" title="When you invent or craft a creation with arcane features, take +1 result level to your roll. You begin with one arcane design already known."></i>
-        <div class="small-horizontal-separator"></div>
-        <input id="strange-methods" type="checkbox" name="data.abilities.strange-methods" {{checked data.abilities.strange-methods}}>
-        <label for="strange-methods"></label>
-        <div class="small-horizontal-separator"></div>
-        <span>Strange Methods</span>
-    </div>
-    <div class="generic-item flex cursor-help">
-        <i class="fas fa-question-circle"
-            title="You can push yourself to do one of the following: unleash a stroke of lightning as a weapon—summon a storm in your immediate vicinity (torrential rain, roaring winds, heavy fog, chilling frost/snow, etc.)."></i>
-        <div class="small-horizontal-separator"></div>
-        <input id="tempest" type="checkbox" name="data.abilities.tempest" {{checked data.abilities.tempest}}>
-        <label for="tempest"></label>
-        <div class="small-horizontal-separator"></div>
-        <span>Tempest</span>
-    </div>
-    <div class="generic-item flex cursor-help">
-        <i class="fas fa-question-circle" title="You may expend your special armor to resist a supernatural consequence, or to push yourself when you deal with arcane forces."></i>
-        <div class="small-horizontal-separator"></div>
-        <input id="warded" type="checkbox" name="data.abilities.warded" {{checked data.abilities.warded}}>
-        <label for="warded"></label>
-        <div class="small-horizontal-separator"></div>
-        <span>Warded</span>
-    </div>
+<div class="small-vertical-separator"></div>
+
+<div class="generic-item flex cursor-help">
+    <i class="fas fa-question-circle" title="You’re always aware of supernatural entities in your presence. Take +1d when you gather info about the supernatural."></i>
+    <div class="small-horizontal-separator"></div>
+    <input id="ghost-mind" type="checkbox" name="data.abilities.ghost-mind" {{checked data.abilities.ghost-mind}}>
+    <label for="ghost-mind"></label>
+    <div class="small-horizontal-separator"></div>
+    <span>Ghost Mind</span>
+</div>
+
+<div class="small-vertical-separator"></div>
+
+<div class="generic-item flex cursor-help">
+    <i class="fas fa-question-circle" title="You're immune to the terror that some supernatural entities inflict on sight. Take +1d to resistance rolls with Resolve."></i>
+    <div class="small-horizontal-separator"></div>
+    <input id="iron-will" type="checkbox" name="data.abilities.iron-will" {{checked data.abilities.iron-will}}>
+    <label for="iron-will"></label>
+    <div class="small-horizontal-separator"></div>
+    <span>Iron Will</span>
+</div>
+
+<div class="small-vertical-separator"></div>
+
+<div class="generic-item flex cursor-help">
+    <i class="fas fa-question-circle"
+        title="You know the secret ways to Consort with ancient powers, forgotten gods or demons. Once you've consorted with one, you get +1d to Command cultists who worship it."></i>
+    <div class="small-horizontal-separator"></div>
+    <input id="occultist" type="checkbox" name="data.abilities.occultist" {{checked data.abilities.occultist}}>
+    <label for="occultist"></label>
+    <div class="small-horizontal-separator"></div>
+    <span>Occultist</span>
+</div>
+
+<div class="small-vertical-separator"></div>
+
+<div class="generic-item flex cursor-help">
+    <i class="fas fa-question-circle"
+        title="You can Study an occult ritual (or create a new one) to summon a supernatural effect or being. You know the arcane methods to perform ritual sorcery. You begin with one ritual already learned."></i>
+    <div class="small-horizontal-separator"></div>
+    <input id="ritual" type="checkbox" name="data.abilities.ritual" {{checked data.abilities.ritual}}>
+    <label for="ritual"></label>
+    <div class="small-horizontal-separator"></div>
+    <span>Ritual</span>
+</div>
+
+<div class="small-vertical-separator"></div>
+
+<div class="generic-item flex cursor-help">
+    <i class="fas fa-question-circle" title="When you invent or craft a creation with arcane features, take +1 result level to your roll. You begin with one arcane design already known."></i>
+    <div class="small-horizontal-separator"></div>
+    <input id="strange-methods" type="checkbox" name="data.abilities.strange-methods" {{checked data.abilities.strange-methods}}>
+    <label for="strange-methods"></label>
+    <div class="small-horizontal-separator"></div>
+    <span>Strange Methods</span>
+</div>
+
+<div class="small-vertical-separator"></div>
+
+<div class="generic-item flex cursor-help">
+    <i class="fas fa-question-circle"
+        title="You can push yourself to do one of the following: unleash a stroke of lightning as a weapon—summon a storm in your immediate vicinity (torrential rain, roaring winds, heavy fog, chilling frost/snow, etc.)."></i>
+    <div class="small-horizontal-separator"></div>
+    <input id="tempest" type="checkbox" name="data.abilities.tempest" {{checked data.abilities.tempest}}>
+    <label for="tempest"></label>
+    <div class="small-horizontal-separator"></div>
+    <span>Tempest</span>
+</div>
+
+<div class="small-vertical-separator"></div>
+
+<div class="generic-item flex cursor-help">
+    <i class="fas fa-question-circle" title="You may expend your special armor to resist a supernatural consequence, or to push yourself when you deal with arcane forces."></i>
+    <div class="small-horizontal-separator"></div>
+    <input id="warded" type="checkbox" name="data.abilities.warded" {{checked data.abilities.warded}}>
+    <label for="warded"></label>
+    <div class="small-horizontal-separator"></div>
+    <span>Warded</span>
 </div>
