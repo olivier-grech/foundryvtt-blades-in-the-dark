@@ -63,7 +63,13 @@
         "subterfuge-suplies": 0,
         "demolition-tools": 0,
         "tinkering-tools": 0,
-        "lantern": 0
+        "lantern": 0,
+        "fine-lightning-hook": 0,
+        "fine-spirit-mask": 0,
+        "electroplasm-vials": 0,
+        "spirit-bottles": 0,
+        "ghost-key": 0,
+        "demonbane-charm": 0
       },
       "abilities": {
         "compel": 0,
