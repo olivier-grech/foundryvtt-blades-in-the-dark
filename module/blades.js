@@ -16,6 +16,7 @@ import { BladesActorSheet } from "./blades-actor-sheet.js";
 import { BladesCrewSheet } from "./blades-crew-sheet.js";
 import { BladesClockSheet } from "./blades-clock-sheet.js";
 import { PlaybookSheetLurk } from "./playbook-sheet-lurk.js"
+import { PlaybookSheetSlide } from "./playbook-sheet-slide.js"
 import { PlaybookSheetWhisper } from "./playbook-sheet-whisper.js"
 import * as migrations from "./migration.js";
 
@@ -45,6 +46,7 @@ Hooks.once("init", async function() {
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("blades", BladesActorSheet, { types: ["character"], makeDefault: true });
   Actors.registerSheet("blades", PlaybookSheetLurk, { types: ["lurk"], makeDefault: true });
+  Actors.registerSheet("blades", PlaybookSheetSlide, { types: ["slide"], makeDefault: true });
   Actors.registerSheet("blades", PlaybookSheetWhisper, { types: ["whisper"], makeDefault: true });
   Actors.registerSheet("blades", BladesCrewSheet, { types: ["crew"], makeDefault: true });
   Actors.registerSheet("blades", BladesClockSheet, { types: ["\uD83D\uDD5B clock"], makeDefault: true });
