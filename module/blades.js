@@ -15,6 +15,7 @@ import { BladesItemSheet } from "./blades-item-sheet.js";
 import { BladesActorSheet } from "./blades-actor-sheet.js";
 import { BladesCrewSheet } from "./blades-crew-sheet.js";
 import { BladesClockSheet } from "./blades-clock-sheet.js";
+import { CrewSheetCult } from "./crew-sheet-cult.js";
 import { PlaybookSheetLurk } from "./playbook-sheet-lurk.js"
 import { PlaybookSheetSlide } from "./playbook-sheet-slide.js"
 import { PlaybookSheetWhisper } from "./playbook-sheet-whisper.js"
@@ -45,6 +46,7 @@ Hooks.once("init", async function() {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("blades", BladesActorSheet, { types: ["character"], makeDefault: true });
+  Actors.registerSheet("blades", CrewSheetCult, { types: ["cult"], makeDefault: true });
   Actors.registerSheet("blades", PlaybookSheetLurk, { types: ["lurk"], makeDefault: true });
   Actors.registerSheet("blades", PlaybookSheetSlide, { types: ["slide"], makeDefault: true });
   Actors.registerSheet("blades", PlaybookSheetWhisper, { types: ["whisper"], makeDefault: true });

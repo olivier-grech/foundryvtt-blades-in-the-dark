@@ -1,6 +1,6 @@
 {
 "Actor": {
-  "types": ["character", "crew", "\uD83D\uDD5B clock", "lurk", "slide", "whisper"],
+  "types": ["character", "crew", "cult", "\uD83D\uDD5B clock", "lurk", "slide", "whisper"],
   "templates": {
     "character": {
       "alias": "",
@@ -227,6 +227,28 @@
             }
           }
       }
+    },
+    "crew": {
+      "name": "",
+      "reputation": [0],
+      "lair": "",
+      "tier": [0],
+      "deity": "",
+      "hold": ["strong"],
+      "experience": [0],
+      "hold_types": ["weak", "strong"],
+      "coins": {
+        "max": 4,
+        "value": [0]
+      },
+      "vault": {
+        "value": [0],
+        "max": 0
+      },
+      "turfs": [8],
+      "features": [],
+      "heat": [0],
+      "wanted": [0]
     }
   },
   "lurk": {
@@ -238,27 +260,8 @@
   "whisper": {
     "templates": ["character"]
   },
-  "crew": {
-    "name": "",
-    "reputation": [0],
-    "lair": "",
-    "tier": [0],
-    "deity": "",
-    "hold": ["strong"],
-    "experience": [0],
-    "hold_types": ["weak", "strong"],
-    "coins": {
-      "max": 4,
-      "value": [0]
-    },
-    "vault": {
-      "value": [0],
-      "max": 0
-    },
-    "turfs": [8],
-    "features": [],
-    "heat": [0],
-    "wanted": [0]
+  "cult": {
+    "templates": ["crew"]
   },
   "\uD83D\uDD5B clock": {
     "name": "",
