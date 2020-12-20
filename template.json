@@ -14,12 +14,8 @@
         "heritage": "",
         "background": "",
         "vice": "",
-        "coins": [
-          0
-        ],
-        "coins_stashed": [
-          0
-        ],
+        "coin": 0,
+        "stash": 0,
         "stress": {
           "value": [
             0
@@ -286,6 +282,7 @@
         "reputation": "",
         "lair": "",
         "divinity": "",
+        "vault": 0,
         "reputation-level": [
           0
         ],

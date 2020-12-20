@@ -1,20 +1,20 @@
 <div>
   <div>
     <b>Coin</b>
-    <label for="coins-{{actor._id}}-hands-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
+    <label for="coin-{{actor._id}}-hands-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
   </div>
   <div class="coins coins-hand">
-    {{#multiboxes data.coins}}
-    <input type="radio" id="coins-{{actor._id}}-hands-0" name="data.coins" value="0" checked="checked">
+    {{#multiboxes data.coin}}
+    <input type="radio" id="coin-{{actor._id}}-hands-0" name="data.coin" value="0" checked="checked">
     <!-- Row of coins -->
-    <input type="radio" id="coins-{{actor._id}}-hands-1" name="data.coins" value="1">
-    <label for="coins-{{actor._id}}-hands-1"></label>
-    <input type="radio" id="coins-{{actor._id}}-hands-2" name="data.coins" value="2">
-    <label for="coins-{{actor._id}}-hands-2"></label>
-    <input type="radio" id="coins-{{actor._id}}-hands-3" name="data.coins" value="3">
-    <label for="coins-{{actor._id}}-hands-3"></label>
-    <input type="radio" id="coins-{{actor._id}}-hands-4" name="data.coins" value="4">
-    <label for="coins-{{actor._id}}-hands-4"></label>
+    <input type="radio" id="coin-{{actor._id}}-hands-1" name="data.coin" value="1">
+    <label for="coin-{{actor._id}}-hands-1"></label>
+    <input type="radio" id="coin-{{actor._id}}-hands-2" name="data.coin" value="2">
+    <label for="coin-{{actor._id}}-hands-2"></label>
+    <input type="radio" id="coin-{{actor._id}}-hands-3" name="data.coin" value="3">
+    <label for="coin-{{actor._id}}-hands-3"></label>
+    <input type="radio" id="coin-{{actor._id}}-hands-4" name="data.coin" value="4">
+    <label for="coin-{{actor._id}}-hands-4"></label>
     {{/multiboxes}}
   </div>
 
@@ -22,95 +22,95 @@
 
   <div>
     <b>Stash</b>
-    <label for="coins-{{actor._id}}-stashed-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
+    <label for="coin-{{actor._id}}-stashed-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
   </div>
   <div class="coins coins-stashed">
-    {{#multiboxes data.coins_stashed}}
-    <input type="radio" id="coins-{{actor._id}}-stashed-0" name="data.coins_stashed" value="0" checked="checked">
+    {{#multiboxes data.stash}}
+    <input type="radio" id="coin-{{actor._id}}-stashed-0" name="data.stash" value="0" checked="checked">
     <!-- First row of coins -->
-    <input type="radio" id="coins-{{actor._id}}-stashed-1" name="data.coins_stashed" value="1">
-    <label for="coins-{{actor._id}}-stashed-1"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-2" name="data.coins_stashed" value="2">
-    <label for="coins-{{actor._id}}-stashed-2"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-3" name="data.coins_stashed" value="3">
-    <label for="coins-{{actor._id}}-stashed-3"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-4" name="data.coins_stashed" value="4">
-    <label for="coins-{{actor._id}}-stashed-4"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-5" name="data.coins_stashed" value="5">
-    <label for="coins-{{actor._id}}-stashed-5"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-6" name="data.coins_stashed" value="6">
-    <label for="coins-{{actor._id}}-stashed-6"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-7" name="data.coins_stashed" value="7">
-    <label for="coins-{{actor._id}}-stashed-7"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-8" name="data.coins_stashed" value="8">
-    <label for="coins-{{actor._id}}-stashed-8"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-9" name="data.coins_stashed" value="9">
-    <label for="coins-{{actor._id}}-stashed-9"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-1" name="data.stash" value="1">
+    <label for="coin-{{actor._id}}-stashed-1"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-2" name="data.stash" value="2">
+    <label for="coin-{{actor._id}}-stashed-2"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-3" name="data.stash" value="3">
+    <label for="coin-{{actor._id}}-stashed-3"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-4" name="data.stash" value="4">
+    <label for="coin-{{actor._id}}-stashed-4"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-5" name="data.stash" value="5">
+    <label for="coin-{{actor._id}}-stashed-5"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-6" name="data.stash" value="6">
+    <label for="coin-{{actor._id}}-stashed-6"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-7" name="data.stash" value="7">
+    <label for="coin-{{actor._id}}-stashed-7"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-8" name="data.stash" value="8">
+    <label for="coin-{{actor._id}}-stashed-8"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-9" name="data.stash" value="9">
+    <label for="coin-{{actor._id}}-stashed-9"></label>
     <!-- Second row of coins -->
-    <input type="radio" id="coins-{{actor._id}}-stashed-10" name="data.coins_stashed" value="10">
-    <label for="coins-{{actor._id}}-stashed-10"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-11" name="data.coins_stashed" value="11">
-    <label for="coins-{{actor._id}}-stashed-11"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-12" name="data.coins_stashed" value="12">
-    <label for="coins-{{actor._id}}-stashed-12"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-13" name="data.coins_stashed" value="13">
-    <label for="coins-{{actor._id}}-stashed-13"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-14" name="data.coins_stashed" value="14">
-    <label for="coins-{{actor._id}}-stashed-14"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-15" name="data.coins_stashed" value="15">
-    <label for="coins-{{actor._id}}-stashed-15"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-16" name="data.coins_stashed" value="16">
-    <label for="coins-{{actor._id}}-stashed-16"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-17" name="data.coins_stashed" value="17">
-    <label for="coins-{{actor._id}}-stashed-17"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-18" name="data.coins_stashed" value="18">
-    <label for="coins-{{actor._id}}-stashed-18"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-19" name="data.coins_stashed" value="19">
-    <label for="coins-{{actor._id}}-stashed-19"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-10" name="data.stash" value="10">
+    <label for="coin-{{actor._id}}-stashed-10"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-11" name="data.stash" value="11">
+    <label for="coin-{{actor._id}}-stashed-11"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-12" name="data.stash" value="12">
+    <label for="coin-{{actor._id}}-stashed-12"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-13" name="data.stash" value="13">
+    <label for="coin-{{actor._id}}-stashed-13"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-14" name="data.stash" value="14">
+    <label for="coin-{{actor._id}}-stashed-14"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-15" name="data.stash" value="15">
+    <label for="coin-{{actor._id}}-stashed-15"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-16" name="data.stash" value="16">
+    <label for="coin-{{actor._id}}-stashed-16"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-17" name="data.stash" value="17">
+    <label for="coin-{{actor._id}}-stashed-17"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-18" name="data.stash" value="18">
+    <label for="coin-{{actor._id}}-stashed-18"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-19" name="data.stash" value="19">
+    <label for="coin-{{actor._id}}-stashed-19"></label>
     <!-- Third row of coins -->
-    <input type="radio" id="coins-{{actor._id}}-stashed-20" name="data.coins_stashed" value="20">
-    <label for="coins-{{actor._id}}-stashed-20"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-21" name="data.coins_stashed" value="21">
-    <label for="coins-{{actor._id}}-stashed-21"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-22" name="data.coins_stashed" value="22">
-    <label for="coins-{{actor._id}}-stashed-22"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-23" name="data.coins_stashed" value="23">
-    <label for="coins-{{actor._id}}-stashed-23"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-24" name="data.coins_stashed" value="24">
-    <label for="coins-{{actor._id}}-stashed-24"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-25" name="data.coins_stashed" value="25">
-    <label for="coins-{{actor._id}}-stashed-25"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-26" name="data.coins_stashed" value="26">
-    <label for="coins-{{actor._id}}-stashed-26"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-27" name="data.coins_stashed" value="27">
-    <label for="coins-{{actor._id}}-stashed-27"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-28" name="data.coins_stashed" value="28">
-    <label for="coins-{{actor._id}}-stashed-28"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-29" name="data.coins_stashed" value="29">
-    <label for="coins-{{actor._id}}-stashed-29"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-20" name="data.stash" value="20">
+    <label for="coin-{{actor._id}}-stashed-20"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-21" name="data.stash" value="21">
+    <label for="coin-{{actor._id}}-stashed-21"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-22" name="data.stash" value="22">
+    <label for="coin-{{actor._id}}-stashed-22"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-23" name="data.stash" value="23">
+    <label for="coin-{{actor._id}}-stashed-23"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-24" name="data.stash" value="24">
+    <label for="coin-{{actor._id}}-stashed-24"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-25" name="data.stash" value="25">
+    <label for="coin-{{actor._id}}-stashed-25"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-26" name="data.stash" value="26">
+    <label for="coin-{{actor._id}}-stashed-26"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-27" name="data.stash" value="27">
+    <label for="coin-{{actor._id}}-stashed-27"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-28" name="data.stash" value="28">
+    <label for="coin-{{actor._id}}-stashed-28"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-29" name="data.stash" value="29">
+    <label for="coin-{{actor._id}}-stashed-29"></label>
     <!-- Fourth row of coins -->
-    <input type="radio" id="coins-{{actor._id}}-stashed-30" name="data.coins_stashed" value="30">
-    <label for="coins-{{actor._id}}-stashed-30"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-31" name="data.coins_stashed" value="31">
-    <label for="coins-{{actor._id}}-stashed-31"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-32" name="data.coins_stashed" value="32">
-    <label for="coins-{{actor._id}}-stashed-32"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-33" name="data.coins_stashed" value="33">
-    <label for="coins-{{actor._id}}-stashed-33"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-34" name="data.coins_stashed" value="34">
-    <label for="coins-{{actor._id}}-stashed-34"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-35" name="data.coins_stashed" value="35">
-    <label for="coins-{{actor._id}}-stashed-35"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-36" name="data.coins_stashed" value="36">
-    <label for="coins-{{actor._id}}-stashed-36"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-37" name="data.coins_stashed" value="37">
-    <label for="coins-{{actor._id}}-stashed-37"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-38" name="data.coins_stashed" value="38">
-    <label for="coins-{{actor._id}}-stashed-38"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-39" name="data.coins_stashed" value="39">
-    <label for="coins-{{actor._id}}-stashed-39"></label>
-    <input type="radio" id="coins-{{actor._id}}-stashed-40" name="data.coins_stashed" value="40">
-    <label for="coins-{{actor._id}}-stashed-40"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-30" name="data.stash" value="30">
+    <label for="coin-{{actor._id}}-stashed-30"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-31" name="data.stash" value="31">
+    <label for="coin-{{actor._id}}-stashed-31"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-32" name="data.stash" value="32">
+    <label for="coin-{{actor._id}}-stashed-32"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-33" name="data.stash" value="33">
+    <label for="coin-{{actor._id}}-stashed-33"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-34" name="data.stash" value="34">
+    <label for="coin-{{actor._id}}-stashed-34"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-35" name="data.stash" value="35">
+    <label for="coin-{{actor._id}}-stashed-35"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-36" name="data.stash" value="36">
+    <label for="coin-{{actor._id}}-stashed-36"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-37" name="data.stash" value="37">
+    <label for="coin-{{actor._id}}-stashed-37"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-38" name="data.stash" value="38">
+    <label for="coin-{{actor._id}}-stashed-38"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-39" name="data.stash" value="39">
+    <label for="coin-{{actor._id}}-stashed-39"></label>
+    <input type="radio" id="coin-{{actor._id}}-stashed-40" name="data.stash" value="40">
+    <label for="coin-{{actor._id}}-stashed-40"></label>
     {{/multiboxes}}
   </div>
 </div>
