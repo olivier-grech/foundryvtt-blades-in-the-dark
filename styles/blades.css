@@ -176,6 +176,17 @@
   background-color: #AAAAAA;
 }
 
+.turf-lair-location {
+  background-color: #111111;
+}
+
+.turf-horizontal-connection {
+  background-color: #AAAAAA;
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+}
+
 .turf-vertical-connection {
   background-color: #AAAAAA;
   height :100%;
