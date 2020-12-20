@@ -165,6 +165,24 @@
   background-color: #111111;
 }
 
+/* Turf */
+.turf {
+  display: grid;
+  grid-template-columns: 100px 20px 100px 20px 100px 20px 100px 20px 100px;
+  grid-template-rows: 60px 20px 60px 20px 60px;
+}
+
+.turf-location {
+  background-color: #AAAAAA;
+}
+
+.turf-vertical-connection {
+  background-color: #AAAAAA;
+  height :100%;
+  width: 20px;
+  margin: auto;
+}
+
 /* Coin */
 
 .coins label {
