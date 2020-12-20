@@ -20,6 +20,7 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/blades-in-the-dark/templates/actor-parts/coins.html",
     "systems/blades-in-the-dark/templates/actor-parts/items.html",
     "systems/blades-in-the-dark/templates/actor-parts/stress.html",
+    "systems/blades-in-the-dark/templates/crew-parts/crew-generic.html",
     "systems/blades-in-the-dark/templates/parts/turf-list.html",
     "systems/blades-in-the-dark/templates/parts/cohort-block.html"
   ];

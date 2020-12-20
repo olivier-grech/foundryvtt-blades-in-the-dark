@@ -1,22 +1,19 @@
 <div class="generic-information">
     <img class="generic-information-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
-
     <div id="name">
-        <label for="character-{{actor._id}}-name"><b>Name</b></label>
-        <input type="text" id="character-{{actor._id}}-name" name="name" value="{{actor.name}}">
-    </div>
-
-    <div id="vice">
-        <label for="character-{{actor._id}}-vice"><b>Vice</b></label>
-        <input type="text" id="character-{{actor._id}}-vice" name="vice" value="{{actor.vice}}">
+        <b>Name</b>
+        <input type="text" name="name" value="{{actor.name}}">
     </div>
     <div id="heritage">
-        <label for="character-{{actor._id}}-heritage"><b>Heritage</b></label>
-        <input type="text" id="character-{{actor._id}}-heritage" name="heritage" value="{{actor.heritage}}">
+        <b>Heritage</b>
+        <input type="text" name="data.heritage" value="{{data.heritage}}">
     </div>
-
     <div id="background">
-        <label for="character-{{actor._id}}-background"><b>Background</b></label>
-        <input type="text" id="character-{{actor._id}}-background" name="background" value="{{actor.background}}">
+        <b>Background</b>
+        <input type="text" name="data.background" value="{{data.background}}">
+    </div>
+    <div id="vice">
+        <b>Vice</b>
+        <input type="text" name="data.vice" value="{{data.vice}}">
     </div>
 </div>
