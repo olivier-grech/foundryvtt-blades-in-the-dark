@@ -71,14 +71,14 @@
 
 /* Top part */
 
-.character-top-grid {
+.generic-information {
   display: grid;
   grid-template-columns: 91px auto auto;
   grid-template-rows: 43px 43px;
   gap: 5px;
 }
 
-.character-top-grid-img {
+.generic-information-img {
   grid-row-start: 1;
   grid-row-end: 3;
 }
