@@ -165,7 +165,7 @@
   background-color: #111111;
 }
 
-/* Coins */
+/* Coin */
 
 .coins label {
   background-color: #FFDC00;
@@ -188,10 +188,6 @@
   background-color: #FFDC00;
 }
 
-.coins input ~ label[for$="0"] {
-  border-width: 2px;
-}
-
 .coins input ~ label:hover {
   background-color: #FFDC00;
 }
@@ -209,6 +205,14 @@
   display: grid;
   grid-template-columns: repeat(10, 15px [col-start]);
   grid-template-rows: repeat(4, 15px [row-start]);
+  row-gap: 3px;
+}
+
+.coins-vault {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(8, 15px [col-start]);
+  grid-template-rows: repeat(3, 15px [row-start]);
   row-gap: 3px;
 }
 
