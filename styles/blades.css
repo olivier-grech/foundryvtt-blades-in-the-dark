@@ -249,6 +249,42 @@
   row-gap: 3px;
 }
 
+/* Reputation level */
+
+.reputation-level {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(12, 15px [col-start]);
+  grid-template-rows: repeat(1, 15px [row-start]);
+  row-gap: 3px;
+}
+
+.reputation-level label {
+  background-color: #0074D9;
+  border: 1px solid #111111;
+  cursor: pointer;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.reputation-level input {
+  display: none;
+}
+
+.reputation-level input:checked ~ label {
+  background-color: transparent;
+}
+
+.reputation-level input:checked + label {
+  background-color: #0074D9;
+}
+
+.reputation-level input ~ label:hover {
+  background-color: #0074D9;
+}
+
+
 /* Stress */
 
 .stress {
@@ -278,10 +314,6 @@
 
 .stress input:checked + label {
   background-color: #FF4136;
-}
-
-.stress input ~ label[for$="0"] {
-  border-width: 2px;
 }
 
 .stress input ~ label:hover {
