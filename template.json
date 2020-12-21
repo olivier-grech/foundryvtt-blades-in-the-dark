@@ -337,20 +337,22 @@
       "templates": [
         "crew"
       ],
-      "cloister": 0,
-      "vice-den": 0,
-      "offertory": 0,
-      "ancient-obelisk": 0,
-      "ancient-tower": 0,
-      "turf-1": 0,
-      "turf-2": 0,
-      "turf-3": 0,
-      "turf-4": 0,
-      "spirit-well": 0,
-      "ancient-gate": 0,
-      "sanctuary": 0,
-      "sacred-nexus": 0,
-      "ancient-altar": 0
+      "turf": {
+        "cloister": 0,
+        "vice-den": 0,
+        "offertory": 0,
+        "ancient-obelisk": 0,
+        "ancient-tower": 0,
+        "turf-1": 0,
+        "turf-2": 0,
+        "turf-3": 0,
+        "turf-4": 0,
+        "spirit-well": 0,
+        "ancient-gate": 0,
+        "sanctuary": 0,
+        "sacred-nexus": 0,
+        "ancient-altar": 0
+      }
     },
     "\uD83D\uDD5B clock": {
       "name": "",
