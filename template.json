@@ -290,15 +290,9 @@
           0
         ],
         "deity": "",
-        "hold": [
-          "strong"
-        ],
+        "hold": 0,
         "experience": [
           0
-        ],
-        "hold_types": [
-          "weak",
-          "strong"
         ],
         "coins": {
           "max": 4,

@@ -2,13 +2,21 @@
     {{> "systems/blades-in-the-dark/templates/crew-parts/crew-generic.html" actor=actor}}
 
     <hr>
-    {{> "systems/blades-in-the-dark/templates/crew-parts/crew-reputation.html" actor=actor}}
+    <div class="flex">
+
+        {{> "systems/blades-in-the-dark/templates/crew-parts/crew-reputation.html" actor=actor}}
+        <div class="horizontal-separator"></div>
+
+        {{> "systems/blades-in-the-dark/templates/crew-parts/crew-hold.html" actor=actor}}
+    </div>
+
     <br>
     {{> "systems/blades-in-the-dark/templates/crew-parts/crew-turf-cult.html" actor=actor}}
 
     <hr>
     <div class="flex">
         {{> "systems/blades-in-the-dark/templates/crew-parts/crew-coin.html" actor=actor}}
+
     </div>
 
 </form>

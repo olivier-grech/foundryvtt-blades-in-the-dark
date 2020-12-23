@@ -22,6 +22,7 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/blades-in-the-dark/templates/actor-parts/stress.html",
     "systems/blades-in-the-dark/templates/crew-parts/crew-coin.html",
     "systems/blades-in-the-dark/templates/crew-parts/crew-generic.html",
+    "systems/blades-in-the-dark/templates/crew-parts/crew-hold.html",
     "systems/blades-in-the-dark/templates/crew-parts/crew-reputation.html",
     "systems/blades-in-the-dark/templates/crew-parts/crew-turf-cult.html",
     "systems/blades-in-the-dark/templates/parts/turf-list.html",

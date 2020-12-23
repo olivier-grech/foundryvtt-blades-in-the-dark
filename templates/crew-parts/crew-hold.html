@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <b>Hold</b>
+    </div>
+    <div class="hold">
+        {{#multiboxes data.hold}}
+        <input type="radio" id="hold-{{actor._id}}-0" name="data.hold" value="0" checked="checked">
+        <label for="hold-{{actor._id}}-0"></label>
+        <span>Weak</span>
+        <div></div>
+        <input type="radio" id="hold-{{actor._id}}-1" name="data.hold" value="1">
+        <label for="hold-{{actor._id}}-1"></label>
+        <span>Strong</span>
+
+        {{/multiboxes}}
+    </div>
+</div>
