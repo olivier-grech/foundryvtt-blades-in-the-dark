@@ -23,16 +23,26 @@
     </div>
     <hr>
 
+    <div class="flex">
 
-    <!-- Abilities column -->
-    <div class="abilities-column">
-        <div class="flex padding white-on-black">
-            <span class="uppercase">ABILITIES</span>
+        <!-- Items column -->
+        <div class="carried-items-column">
+            <div class="flex padding white-on-black">
+                <span class="uppercase">UPGRADES</span>
+            </div>
+            {{> "systems/blades-in-the-dark/templates/crew-parts/crew-upgrades-generic.html" actor=actor}}
         </div>
-        {{> "systems/blades-in-the-dark/templates/crew-parts/crew-abilities-cult.html" actor=actor}}
+
+
+        <div class="horizontal-separator"></div>
+
+
+        <!-- Abilities column -->
+        <div class="abilities-column">
+            <div class="flex padding white-on-black">
+                <span class="uppercase">ABILITIES</span>
+            </div>
+            {{> "systems/blades-in-the-dark/templates/crew-parts/crew-abilities-cult.html" actor=actor}}
+        </div>
     </div>
-
-
-
-
 </form>
