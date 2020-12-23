@@ -279,6 +279,15 @@
         }
       },
       "crew": {
+        "abilities": {
+          "chosen": 0,
+          "anointed": 0,
+          "bound-in-darkness": 0,
+          "conviction": 0,
+          "glory-incarnate": 0,
+          "sealed-in-blood": 0,
+          "zealotry": 0
+        },
         "reputation": "",
         "lair": "",
         "divinity": "",
