@@ -351,6 +351,76 @@
   background-color: #FF4136;
 }
 
+/* Heat */
+
+.heat {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(9, 15px [col-start]);
+  grid-template-rows: repeat(1, 15px [row-start]);
+  row-gap: 3px;
+}
+
+.heat label {
+  background-color: #FF4136;
+  border: 1px solid #111111;
+  cursor: pointer;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.heat input {
+  display: none;
+}
+
+.heat input:checked ~ label {
+  background-color: transparent;
+}
+
+.heat input:checked + label {
+  background-color: #FF4136;
+}
+
+.heat input ~ label:hover {
+  background-color: #FF4136;
+}
+
+/* Wanted level */
+
+.wanted-level {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: repeat(9, 15px [col-start]);
+  grid-template-rows: repeat(1, 15px [row-start]);
+  row-gap: 3px;
+}
+
+.wanted-level label {
+  background-color: #FF4136;
+  border: 1px solid #111111;
+  cursor: pointer;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.wanted-level input {
+  display: none;
+}
+
+.wanted-level input:checked ~ label {
+  background-color: transparent;
+}
+
+.wanted-level input:checked + label {
+  background-color: #FF4136;
+}
+
+.wanted-level input ~ label:hover {
+  background-color: #FF4136;
+}
+
 /* Health clock */
 
  #character-health-clock .blades-clock {

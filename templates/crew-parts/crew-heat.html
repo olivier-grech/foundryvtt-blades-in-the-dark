@@ -1,0 +1,51 @@
+<div>
+    <div>
+        <b>Heat</b>
+        <label for="heat-{{actor._id}}-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
+    </div>
+    <div class="heat">
+        {{#multiboxes data.heat}}
+        <input type="radio" id="heat-{{actor._id}}-0" name="data.heat" value="0" checked="checked">
+        <!-- Row of heat -->
+        <input type="radio" id="heat-{{actor._id}}-1" name="data.heat" value="1">
+        <label for="heat-{{actor._id}}-1"></label>
+        <input type="radio" id="heat-{{actor._id}}-2" name="data.heat" value="2">
+        <label for="heat-{{actor._id}}-2"></label>
+        <input type="radio" id="heat-{{actor._id}}-3" name="data.heat" value="3">
+        <label for="heat-{{actor._id}}-3"></label>
+        <input type="radio" id="heat-{{actor._id}}-4" name="data.heat" value="4">
+        <label for="heat-{{actor._id}}-4"></label>
+        <input type="radio" id="heat-{{actor._id}}-5" name="data.heat" value="5">
+        <label for="heat-{{actor._id}}-5"></label>
+        <input type="radio" id="heat-{{actor._id}}-6" name="data.heat" value="6">
+        <label for="heat-{{actor._id}}-6"></label>
+        <input type="radio" id="heat-{{actor._id}}-7" name="data.heat" value="7">
+        <label for="heat-{{actor._id}}-7"></label>
+        <input type="radio" id="heat-{{actor._id}}-8" name="data.heat" value="8">
+        <label for="heat-{{actor._id}}-8"></label>
+        <input type="radio" id="heat-{{actor._id}}-9" name="data.heat" value="9">
+        <label for="heat-{{actor._id}}-9"></label>
+        {{/multiboxes}}
+    </div>
+
+    <br>
+
+    <div>
+        <b>Wanted Level</b>
+        <label for="wanted-level-{{actor._id}}-0"><i class="fas fa-sync nullifier foundry-hover"></i></label>
+    </div>
+    <div class="wanted-level">
+        {{#multiboxes data.wanted-level}}
+        <input type="radio" id="wanted-level-{{actor._id}}-0" name="data.wanted-level" value="0" checked="checked">
+        <!-- Row of wanted-level -->
+        <input type="radio" id="wanted-level-{{actor._id}}-1" name="data.wanted-level" value="1">
+        <label for="wanted-level-{{actor._id}}-1"></label>
+        <input type="radio" id="wanted-level-{{actor._id}}-2" name="data.wanted-level" value="2">
+        <label for="wanted-level-{{actor._id}}-2"></label>
+        <input type="radio" id="wanted-level-{{actor._id}}-3" name="data.wanted-level" value="3">
+        <label for="wanted-level-{{actor._id}}-3"></label>
+        <input type="radio" id="wanted-level-{{actor._id}}-4" name="data.wanted-level" value="4">
+        <label for="wanted-level-{{actor._id}}-4"></label>
+        {{/multiboxes}}
+    </div>
+</div>
