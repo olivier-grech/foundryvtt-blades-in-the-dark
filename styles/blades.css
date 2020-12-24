@@ -21,6 +21,10 @@
 
 /* Generic utilities */
 
+.no-resize {
+  resize: none;
+}
+
 .white-on-black {
   background-color: #111111;
   color: white;
@@ -373,6 +377,42 @@
 .stress input ~ label:hover {
   background-color: #FF4136;
 }
+
+/* Cohorts harm */
+
+.cohort-harm {
+  column-gap: 3px;
+  display: grid;
+  grid-template-columns: 15px auto 15px auto 15px auto;
+  grid-template-rows: repeat(1, 15px [row-start]);
+  row-gap: 3px;
+}
+
+.cohort-harm label {
+  background-color: #FF4136;
+  border: 1px solid #111111;
+  cursor: pointer;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.cohort-harm input {
+  display: none;
+}
+
+.cohort-harm input:checked ~ label {
+  background-color: transparent;
+}
+
+.cohort-harm input:checked + label {
+  background-color: #FF4136;
+}
+
+.cohort-harm input ~ label:hover {
+  background-color: #FF4136;
+}
+
 
 /* Heat */
 

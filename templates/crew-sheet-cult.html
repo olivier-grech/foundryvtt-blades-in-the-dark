@@ -24,6 +24,8 @@
     <hr>
 
     <div class="flex">
+        {{> "systems/blades-in-the-dark/templates/crew-parts/crew-cohorts.html" actor=actor}}
+        <div class="horizontal-separator"></div>
 
         <!-- Items column -->
         <div class="carried-items-column">
@@ -33,9 +35,7 @@
             {{> "systems/blades-in-the-dark/templates/crew-parts/crew-upgrades-generic.html" actor=actor}}
         </div>
 
-
         <div class="horizontal-separator"></div>
-
 
         <!-- Abilities column -->
         <div class="abilities-column">
@@ -44,5 +44,7 @@
             </div>
             {{> "systems/blades-in-the-dark/templates/crew-parts/crew-abilities-cult.html" actor=actor}}
         </div>
+
+
     </div>
 </form>

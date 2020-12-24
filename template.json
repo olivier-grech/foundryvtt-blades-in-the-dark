@@ -279,6 +279,14 @@
         }
       },
       "crew": {
+        "cohort-description-1": "",
+        "cohort-description-2": "",
+        "cohort-description-3": "",
+        "cohort-description-4": "",
+        "cohort-harm-1": "",
+        "cohort-harm-2": "",
+        "cohort-harm-3": "",
+        "cohort-harm-4": "",
         "abilities": {
           "chosen": 0,
           "anointed": 0,
